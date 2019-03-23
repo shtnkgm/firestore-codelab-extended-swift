@@ -92,10 +92,19 @@ class ProfileViewController: UIViewController {
 
   fileprivate func setUser(firebaseUser: FirebaseAuth.UserInfo?) {
     if let firebaseUser = firebaseUser {
-      let user = User(user: firebaseUser)
-      self.user = user
+        let user = User(user: firebaseUser)
+        self.user = user
+        // Add these lines here
+        Firestore.firestore()
+            .collection("users")
+            .document(user.userID)
+            .setData(user.documentData) { error in
+                if let error = error {
+                    print("Error writing user to Firestore: \(error)")
+                }
+        }
     } else {
-      user = nil
+        user = nil
     }
   }
 
