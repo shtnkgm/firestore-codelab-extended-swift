@@ -157,7 +157,6 @@ class RestaurantsTableViewController: UIViewController, UITableViewDelegate {
 extension RestaurantsTableViewController: FiltersViewControllerDelegate {
 
   func query(withCategory category: String?, city: String?, price: Int?, sortBy: String?) -> Query {
-    var filtered = baseQuery
 
     if category == nil && city == nil && price == nil && sortBy == nil {
       stackViewHeightConstraint.constant = 0
@@ -168,6 +167,25 @@ extension RestaurantsTableViewController: FiltersViewControllerDelegate {
     }
 
     // Sort and Filter data
+    var filtered = baseQuery
+    
+    // Sort and Filter data
+    
+    if let category = category, !category.isEmpty {
+        filtered = filtered.whereField("category", isEqualTo: category)
+    }
+    
+    if let city = city, !city.isEmpty {
+        filtered = filtered.whereField("city", isEqualTo: city)
+    }
+    
+    if let price = price {
+        filtered = filtered.whereField("price", isEqualTo: price)
+    }
+    
+    if let sortBy = sortBy, !sortBy.isEmpty {
+        filtered = filtered.order(by: sortBy)
+    }
 
     return filtered
   }
