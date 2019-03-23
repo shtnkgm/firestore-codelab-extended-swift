@@ -93,6 +93,16 @@ class EditRestaurantViewController: UIViewController, UINavigationControllerDele
 
 
     // TODO: Update the restaurant document in Cloud Firestore
+    Firestore.firestore()
+        .collection("restaurants")
+        .document(restaurant.documentID)
+        .updateData(data) { err in
+            if let err = err {
+                print("Error writing document: \(err)")
+            } else {
+                self.presentDidSaveAlert()
+            }
+    }
   }
 
   // MARK: Setting up pickers
