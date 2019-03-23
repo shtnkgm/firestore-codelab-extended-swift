@@ -37,6 +37,7 @@
 		8DF1E3151EE72C4600192CDE /* LocalCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF1E3141EE72C4600192CDE /* LocalCollection.swift */; };
 		8DF77E1A1EEB45E500CB2330 /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF77E191EEB45E500CB2330 /* RestaurantDetailViewController.swift */; };
 		8DF77E1C1EEB645100CB2330 /* StarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF77E1B1EEB645100CB2330 /* StarsView.swift */; };
+		DABEE2172245C0D900CDA98F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DABEE2162245C0D900CDA98F /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		8DF77E191EEB45E500CB2330 /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
 		8DF77E1B1EEB645100CB2330 /* StarsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarsView.swift; sourceTree = "<group>"; };
 		9E225A2DA1F5AE20A9218112 /* Pods-FriendlyEats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendlyEats.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FriendlyEats/Pods-FriendlyEats.debug.xcconfig"; sourceTree = "<group>"; };
+		DABEE2162245C0D900CDA98F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +203,7 @@
 				8D9BBC371EE2200900194E9A /* Assets.xcassets */,
 				8DD9ACD91F7B166900C2DD24 /* pizza-monster.png */,
 				8D9BBC391EE2200900194E9A /* LaunchScreen.storyboard */,
+				DABEE2162245C0D900CDA98F /* GoogleService-Info.plist */,
 				8D9BBC3C1EE2200900194E9A /* Info.plist */,
 			);
 			path = FriendlyEats;
@@ -317,6 +320,7 @@
 			files = (
 				8D9BBC3B1EE2200900194E9A /* LaunchScreen.storyboard in Resources */,
 				8D9BBC381EE2200900194E9A /* Assets.xcassets in Resources */,
+				DABEE2172245C0D900CDA98F /* GoogleService-Info.plist in Resources */,
 				8D9BBC361EE2200900194E9A /* Main.storyboard in Resources */,
 				8DD9ACDA1F7B166900C2DD24 /* pizza-monster.png in Resources */,
 			);
